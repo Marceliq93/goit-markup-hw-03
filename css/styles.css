@@ -1,5 +1,7 @@
 /*project styles*/
-
+* {
+  margin: 0;
+}
 :root {
   --slate: #434455;
   --iris: #4d5ae5;
@@ -10,8 +12,21 @@
   --cornflower: #e7e9fc;
 }
 
+header {
+  display: flex;
+  width: 1440px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
+.section {
+  padding-left: 120px;
+  padding-right: 120px;
+}
 body {
   font-family: "Roboto", sans-serif;
+  width: 1440px;
 }
 .address:hover {
   color: #404bbf;
@@ -19,6 +34,7 @@ body {
 .address:focus {
   color: #404bbf;
 }
+
 .address {
   color: var(--slate);
   font-size: 16px;
@@ -29,6 +45,30 @@ body {
   font-family: inherit;
 }
 
+nav {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 261px;
+}
+
+address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 24px 156px 24px 332px;
+}
+.container {
+  width: 1158px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  margin-right: 332px;
+}
 .menu-element {
   color: var(--navyblue);
   font-size: 16px;
@@ -44,13 +84,30 @@ body {
 .menu-element:visited {
   color: none;
 }
+
+footer {
+  background: var(--navyblue);
+}
+
+.footer-logo {
+  padding-top: 100px;
+  padding-right: 1169px;
+  padding-left: 156px;
+  margin-bottom: 17.5px;
+}
 .footer-info {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
   font-family: inherit;
+  width: 264px;
+  margin-top: 17.5px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+  padding-right: 1020px;
 }
+
 ul {
   list-style: none;
 }
@@ -65,6 +122,12 @@ ul {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.header-logo {
+  margin-top: 25.5px;
+  margin-bottom: 25.5px;
+  margin-right: 76px;
+  padding-left: 156px;
 }
 .logo-part-header {
   color: var(--navyblue);
@@ -83,17 +146,28 @@ ul {
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  padding-top: 101.5px;
 }
 
 .logo {
   text-decoration: none;
 }
-footer {
-  background: var(--navyblue);
+
+/*index styles*/
+
+.trait-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
-
-/*studio styles*/
-
+.trait-list-item {
+  min-width: 264px;
+}
 .hero {
   background-color: var(--navyblue);
 }
@@ -105,9 +179,15 @@ footer {
   line-height: 1.07;
   letter-spacing: 1.12px;
   font-family: inherit;
+  width: 496px;
+  padding-left: 472px;
+  padding-right: 472px;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 
 .order-service-button {
+  border-style: none;
   border-radius: 4px;
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -118,6 +198,11 @@ footer {
   letter-spacing: 0.64px;
   font-family: inherit;
   cursor: pointer;
+  margin-left: 635px;
+  margin-right: 635px;
+  margin-bottom: 188px;
+  padding: 16px 32px;
+  white-space: nowrap;
 }
 .order-service-button:hover {
   border-radius: 4px;
@@ -128,6 +213,10 @@ footer {
   border-radius: 4px;
   background: var(--ocean);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.trait-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .trait {
   color: var(--navyblue);
@@ -146,6 +235,7 @@ footer {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   font-family: inherit;
+  margin-bottom: 72px;
 }
 .trait-info {
   color: var(--slate);
@@ -154,8 +244,52 @@ footer {
   letter-spacing: 0.32px;
   font-family: inherit;
 }
+.what-doing {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 120px;
+}
 .our-team {
   background: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.team-card {
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-content {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 32px;
+}
+
+.team-list {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  padding-left: 156px;
 }
 .team-member-name {
   color: var(--navyblue);
@@ -177,6 +311,19 @@ footer {
 
 /*portfolio styles*/
 
+.portfolio-section {
+  margin-bottom: 120px;
+}
+.filter {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding-top: 96px;
+  padding-left: 427px;
+  padding-right: 427px;
+  margin-bottom: 72px;
+}
+
 .filter-button {
   border-radius: 4px;
   border: 1px solid var(--cornflower);
@@ -189,6 +336,11 @@ footer {
   letter-spacing: 0.64px;
   font-family: inherit;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+  background: var(--cloud);
+  padding: 12px 24px 12px 24px;
+  white-space: nowrap;
 }
 .filter-button:hover {
   background: var(--ocean);
@@ -197,6 +349,37 @@ footer {
 .filter-button:focus {
   background: var(--ocean);
   color: var(--white);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  box-sizing: border-box;
+}
+
+.project-card {
+  display: flex;
+  width: 360px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--white, #fff);
+  margin-bottom: 48px;
+}
+.card-content {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
 }
 .portfolio-project-name {
   color: var(--navyblue);
