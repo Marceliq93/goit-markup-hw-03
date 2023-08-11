@@ -376,7 +376,6 @@ ul {
 .project-card {
   background: var(--white, #fff);
   margin-bottom: 48px;
-  max-height: 420px;
 }
 .card-content {
   padding: 32px 16px;
