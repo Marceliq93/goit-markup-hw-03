@@ -324,13 +324,14 @@ ul {
 }
 
 /*portfolio styles*/
-
+.filter-button-align {
+  text-align: center;
+}
 .filter {
   display: inline-flex;
   align-items: flex-start;
   gap: 24px;
   margin-bottom: 72px;
-  padding-left: 25%;
 }
 
 .filter-button {
@@ -388,8 +389,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.4px;
   font-family: inherit;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .portfolio-project-type {
@@ -398,6 +398,4 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.32px;
   font-family: inherit;
-  margin-top: 8px;
-  margin-bottom: 0;
 }
