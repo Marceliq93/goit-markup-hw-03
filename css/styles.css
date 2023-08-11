@@ -12,7 +12,43 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-h1 h2 h3 h4 h5 h6 p {
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+h5 {
+  margin: 0;
+}
+h6 {
+  margin: 0;
+}
+div {
+  margin: 0;
+}
+section {
+  margin: 0;
+}
+button {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+ol {
+  margin: 0;
+}
+li {
+  margin: 0;
+}
+p {
   margin: 0;
 }
 img {
@@ -90,9 +126,8 @@ address {
 }
 .menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   gap: 40px;
+  padding: 24px 0;
 }
 .menu-element {
   color: var(--navyblue);
@@ -171,6 +206,8 @@ ul {
 }
 .hero {
   background-color: var(--navyblue);
+  padding: 188px 0;
+  text-align: center;
 }
 .hero-motto {
   color: var(--white);
@@ -181,11 +218,11 @@ ul {
   letter-spacing: 1.12px;
   font-family: inherit;
   width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
 .hero-button-place {
-  padding-bottom: 188px;
   margin-top: 48px;
 }
 
@@ -237,10 +274,13 @@ ul {
   letter-spacing: 0.32px;
   font-family: inherit;
 }
+
+.doing {
+  padding-top: 0;
+}
 .what-doing {
-  display: inline-flex;
+  display: flex;
   gap: 24px;
-  margin-bottom: 120px;
 }
 .our-team {
   background: var(--cloud);
@@ -249,12 +289,6 @@ ul {
 }
 
 .team-card {
-  display: inline-flex;
-  padding-bottom: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
   border-radius: 0px 0px 4px 4px;
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -262,12 +296,12 @@ ul {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-content {
-  width: 232px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .team-list {
-  display: inline-flex;
+  display: flex;
   gap: 24px;
 }
 .team-member-name {
@@ -286,6 +320,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.32px;
   font-family: inherit;
+  margin-top: 8px;
 }
 
 /*portfolio styles*/
